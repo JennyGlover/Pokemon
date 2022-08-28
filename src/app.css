@@ -1,6 +1,22 @@
+body {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(255, 251, 214);
+}
+
 .pokemon-logo{
-padding-top: 30px;
-width: 300px;
+padding-top: 60px;
+padding-bottom: 60px;
+width: 350px;
 display: block;
 margin: 0 auto;
+}
+
+.pokemon-image{
+    width: 100px;
+    padding: 0px;
+
 }
