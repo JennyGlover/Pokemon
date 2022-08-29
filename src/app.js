@@ -40,10 +40,18 @@ randomPokemon.setAttribute('src', pokemonLink)
 
 const myFooter = document.createElement('div');
 myFooter.setAttribute('class', 'my-footer' );
-myFooter.innerHTML = 'Open Source Code by Jenny Glover Saunders';
+const footerLink =  document.createElement('a');
+const footerText =  document.createElement('span');
+footerText.innerText = 'Code by Jenny Glover Saunders ';
+footerLink.innerText = 'Open Source ';
+footerLink.setAttribute('class', 'footer-link');
+footerLink.setAttribute('href', 'https://github.com/JennyGlover/Pokemon')
+footerLink.setAttribute('target', '_blank')
+
+myFooter.appendChild(footerLink.cloneNode(true));
+myFooter.appendChild(footerText.cloneNode(true));
 console.log("Is this working")
 document.body.append(myFooter.cloneNode(true));
-
 // for (i = 0; i<100; i++){
 //     div.appendChild(allButtons.cloneNode(true))
 //   }
